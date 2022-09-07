@@ -1,0 +1,36 @@
+<h2>Binding</h2>
+
+<h3>Binding simple</h3>
+
+<p>
+    Le binding simple permet d'intégrer à l'affichage une expression
+    typescript dont la valeur sera évaluée.
+</p>
+
+<p>Par exemple avec la variable nom dans le .ts: {{ nom }} !</p>
+<p class="{{ classe }} underlined">Utilisation dans un attribut</p>
+
+<h3>Binding attribut</h3>
+
+<p>
+    Dans le cas ou toute la valeur d'un attribut peut être donnée via une expression typescript,
+    on peut utiliser le binding d'attribut en mettant l'attribut ciblé entre [] (ex: [class]=" ... ", )
+</p>
+<p [class]="classe">Utilisation dans un attribut</p>
+
+<h3>Two-Way Binding</h3>
+
+<p>
+    Il est possible qu'on veuille récupérer des infos de l'utilisateurs 
+    et l'utiliser dans le .ts. Dans ce cas nous devons lier un input à
+    une variable via ngModel.
+</p>
+
+<p>
+    Par exemple, récupérons le nom de l'utilisateur (affiché plus haut).
+</p>
+
+<div>
+    <label for="in-nom">Entrez votre nom</label>
+    <input type="text" id="in-nom" [(ngModel)]="nom">
+</div>
