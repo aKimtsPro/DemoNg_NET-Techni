@@ -15,4 +15,9 @@ export class DemoBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClick(param:any){
+    alert("résultat du click");
+    console.log(param);
+  }
+
 }

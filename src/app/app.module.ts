@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { DemoModule } from './demo/demo.module';
 import { ExoModule } from './exo/exo.module';
 import { SharedModule } from './shared/shared.module';
+import { NavComponent } from './components/nav/nav.component';
+import { AccueilComponent } from './components/accueil/accueil.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent,
+    AccueilComponent
   ],
   imports: [
     BrowserModule,

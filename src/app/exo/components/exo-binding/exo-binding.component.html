@@ -1,0 +1,11 @@
+<h2>Exo Binding</h2>
+
+<p>La couleur choisie est : {{ color }}</p>
+
+<div [class]="color" id="colored-square"></div>
+
+<select [(ngModel)]="color">
+    <option value="red">red</option>
+    <option value="green">green</option>
+    <option value="blue">blue</option>
+</select>

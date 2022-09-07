@@ -34,3 +34,19 @@
     <label for="in-nom">Entrez votre nom</label>
     <input type="text" id="in-nom" [(ngModel)]="nom">
 </div>
+
+<h3>Event binding</h3>
+
+<p>
+    Pour réagir aux événements, une autre manière de procéder est mise en place par rapport au JS.
+    Pour réagir à un événement, on met cet event entre parenthèse est on donne l'exécution en valeur tel un attribut.
+    ex: (click)="onClick()"<br>
+    La fonction liée doit être définie dans le .ts.
+</p>
+
+<button (click)="onClick($event)">click me</button>
+
+<p>
+    Les events charient souvent des infos en se déclenchant.
+    On peut récupérer ces infos grâce à $event.
+</p>

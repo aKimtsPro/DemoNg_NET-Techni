@@ -1,12 +1,20 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { ExoBindingComponent } from './components/exo-binding/exo-binding.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ExoBindingComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
+  ],
+  exports:[
+    ExoBindingComponent
   ]
 })
 export class ExoModule { }
