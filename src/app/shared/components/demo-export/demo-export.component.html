@@ -1,1 +1,24 @@
-<p>demo-export works!</p>
+<h2>Import/Export</h2>
+
+<p>
+    Pour utiliser dans un élément déclaré dans un module un élément déclaré
+    dans un autre, il faut:
+</p>
+<ul>
+    <li>exporter depuis le module qui le déclare l'élément que l'on veut utiliser</li>
+    <li>importer le module qui export l'élément dans le module qui déclare l'élément qui veut l'utiliser</li>
+</ul>
+
+<p>
+    Par exemple le module <span>Panier</span> déclare un <span>PanierComponent</span>.
+    Dans le <span>AppComponent</span> de mon module principal, j'aimerais placer mon panier.
+
+    Je fais alors les actions suivantes:
+</p>
+
+<ul>
+    <li>Dans <span>PanierModule</span>, je rajoute le <span>PanierComponent</span> (qu'on retrouve dans les déclarations) au exports (rajouter exports au même niveau que imports si nécessaire)</li>
+    <li>Dans <span>AppModule</span>, je rajoute <span>PanierModule</span> dans les imports</li>
+</ul>
+
+

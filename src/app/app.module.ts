@@ -8,13 +8,15 @@ import { ExoModule } from './exo/exo.module';
 import { SharedModule } from './shared/shared.module';
 import { NavComponent } from './components/nav/nav.component';
 import { AccueilComponent } from './components/accueil/accueil.component';
+import { Page404Component } from './components/page404/page404.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    AccueilComponent
+    AccueilComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
