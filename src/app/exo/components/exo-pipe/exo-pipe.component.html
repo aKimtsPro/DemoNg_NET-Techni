@@ -1,0 +1,13 @@
+<h2>Exo Pipe</h2>
+
+<div id="chrono">
+    <p id="time-display" [ngClass]="{'red-border': !id}">{{ secondes | time }}</p>
+    <div class="btn-group btn-rack">
+        <button type="button" class="btn btn-primary" id="btn-play" [disabled]="id" (click)="play()"><i class="bi bi-play-circle"></i></button>
+        <button type="button" class="btn btn-primary" id="btn-pause" [disabled]="!id"(click)="pause()"><i class="bi bi-pause-circle"></i></button>
+        <button type="button" class="btn btn-primary" id="btn-reset" [disabled]="id" (click)="reset()"><i class="bi bi-arrow-counterclockwise"></i></button>
+    </div>
+</div>
+
+
+

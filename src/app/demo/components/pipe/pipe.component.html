@@ -11,11 +11,19 @@
 <p>On peut aussi créer nos propres pipes.</p>
 
 <p>Ecriture d'un animal sans pipe: {{ animal.nom }} (espece: {{animal.espece}}, age: {{animal.age}} ans)</p>
-<p>Ecriture d'un animal sans pipe: {{ animal | animal }}</p>
+<p>Ecriture d'un animal avec pipe custom: {{ animal | animal }}</p>
 
+
+<img src="/assets/img/schema_pipe.PNG" alt="" width="700px">
 
 <h3>Note supplémentaire</h3>
 
 <p>Il est possible de donner un paramètre après le premier sans donner le premier.</p>
 
 <p>{{ 9 | currency:undefined:'code'}}</p>
+
+<p>Attention lorsqu'on pipe des objects</p>
+
+<button (click)="incAge()">cliquer pour incrémenter l'age de l'animal</button>
+
+<p>Les pipes 'pures' ne détectent pas les modif à l'intérieur des objects sur lesquels ils sont appliqués. Les rendre impures peut être une solution mais attention au problèmes de perf. que cela peut entraîner</p>

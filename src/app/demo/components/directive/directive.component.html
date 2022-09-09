@@ -1,1 +1,56 @@
-<p>directive works!</p>
+<h2>Les directives</h2>
+
+<h3>Les directives de composants</h3>
+
+<h4>NgClass</h4>
+
+<p [ngClass]="{red: isSelected, 'under-lined': !isSelected}">ngClass applique une classe css si un condition est vrai</p>
+
+<button (click)="toggleSelected()">changer couleur</button>
+
+<h4>NgStyle</h4>
+
+<p [ngStyle]="{ 'color': color, 'background-color': 'antiquewhite' }">Permet de donner une valeur 'typescript' à une propriété css de la balise</p>
+
+<select [(ngModel)]="color">
+    <option value="red">red</option>
+    <option value="green">green</option>
+    <option value="blue">blue</option>
+    <option value="yellow">yellow</option>
+</select>
+
+<h3>Les directives structurelles</h3>
+
+<h4>*ngIf</h4>
+
+<input type="checkbox" [(ngModel)]="display">
+
+<p *ngIf="display">Le *ngIf permettra d'intégrer ou pas une balise dans le code.</p>
+
+<h4>*ngFor</h4>
+
+<p>*ngFor permet de répeter du code pour chaque valeur dans une liste</p>
+
+<ul>
+    <ng-container *ngFor="let nbr of tab; let i = index">
+        <li *ngIf="nbr % 2; else pair">
+            index: {{i}} - {{nbr}}
+        </li>
+        <ng-template #pair>
+            <li>
+                pair
+            </li>
+        </ng-template>
+    </ng-container>
+</ul>
+
+<h4>[ngSwitch], *ngSwitchCase et *ngSwitchDefault</h4>
+
+<p>ngSwitch permet d'afficher un de plusieurs bouts de codes selon la valeur d'une expression 'typescript'</p>
+
+<div [ngSwitch]="color">
+    <p *ngSwitchCase="'red'">la couleur est rouge</p>
+    <p *ngSwitchCase="'green'">la couleur est vert</p>
+    <p *ngSwitchCase="'blue'">la couleur est bleu</p>
+    <p *ngSwitchDefault>autre couleur</p>
+</div>

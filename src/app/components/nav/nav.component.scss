@@ -1,3 +1,14 @@
-.active{
-    color: magenta;
+.navbar{
+    background-color: #102B3F;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link.active {
+    color: white;
+    background-color: #66999B;
+    border-radius: 5px;
+
 }

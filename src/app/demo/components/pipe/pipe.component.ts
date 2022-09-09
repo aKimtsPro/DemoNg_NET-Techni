@@ -23,4 +23,8 @@ export class PipeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  incAge(){
+    this.animal.age++;
+  }
+
 }

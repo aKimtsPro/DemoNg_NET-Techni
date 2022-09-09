@@ -1,0 +1,40 @@
+#btn-play {
+    background-color: #A2AD59;
+}
+
+#btn-pause {
+    background-color: #574B60;
+}
+
+#btn-reset {
+    background-color: #61656d;
+}
+
+.btn {
+    border: 1px solid #3F334D;
+}
+
+#chrono {
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #3F334D;
+    background-color: #abb0ba;
+}
+
+.btn-rack {
+    width: 100%;
+}
+
+#time-display {
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.red-border {
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: #e4e8ef;
+    color: black;
+}

@@ -1,7 +1,15 @@
-<h2>Les Exos</h2>
-
-<ul>
-    <li><a routerLink="./binding">binding</a></li>
+<ul class="nav">
+    <li class="nav-item nav-title">
+        <h2>Exos</h2>
+    </li>
+    <li class="nav-item">
+        <a routerLink="./binding" class="nav-link" routerLinkActive="link-active">binding</a>
+    </li>
+    <li class="nav-item">
+        <a routerLink="./pipe" class="nav-link" routerLinkActive="link-active">pipe</a>
+    </li>
 </ul>
 
-<router-outlet></router-outlet>
+<div class="container" id="exo-container">
+    <router-outlet></router-outlet>
+</div>
