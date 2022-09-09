@@ -4,13 +4,21 @@ import { DemoBindingComponent } from './components/demo-binding/demo-binding.com
 import { FormsModule } from '@angular/forms';
 import { DemoContainerComponent } from './components/demo-container/demo-container.component';
 import { DemoRoutingModule } from './demo-routing.module';
+import { DirectiveComponent } from './components/directive/directive.component';
+import { ParamComponent } from './components/param/param.component';
+import { PipeComponent } from './components/pipe/pipe.component';
+import { AnimalPipe } from './pipes/animal.pipe';
 
 
 
 @NgModule({
   declarations: [
     DemoBindingComponent,
-    DemoContainerComponent
+    DemoContainerComponent,
+    DirectiveComponent,
+    ParamComponent,
+    PipeComponent,
+    AnimalPipe
   ],
   imports: [
     CommonModule,

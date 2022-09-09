@@ -1,7 +1,12 @@
-<h1>Les Demos</h1>
+<h2>Les Demos</h2>
 
 <ul>
     <li><a routerLink="./binding">binding</a></li>
+    <li><a routerLink="./directive">directive</a></li>
+    <li>
+        nav avec param : <input type="number" [(ngModel)]="nombre"><button (click)="checkParite()">voir parité</button>
+    </li>
+    <li><a routerLink="./pipe">pipe</a></li>
 </ul>
 
 <router-outlet></router-outlet>

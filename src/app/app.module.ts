@@ -22,8 +22,8 @@ import { Page404Component } from './components/page404/page404.component';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    ExoModule,
-    DemoModule
+    // ExoModule,
+    // DemoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

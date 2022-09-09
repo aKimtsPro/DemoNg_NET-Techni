@@ -1,0 +1,21 @@
+<h2>Les pipes</h2>
+
+<p>Les pipes servent à une transformation d'information directement dans le template.</p>
+
+<h3>Pipes prédéfinis</h3>
+
+<p>Par exemple, je souhaite afficher une date: {{ date | date:'dd MMMM yy' | uppercase }}</p>
+
+<h3>Pipes custom</h3>
+
+<p>On peut aussi créer nos propres pipes.</p>
+
+<p>Ecriture d'un animal sans pipe: {{ animal.nom }} (espece: {{animal.espece}}, age: {{animal.age}} ans)</p>
+<p>Ecriture d'un animal sans pipe: {{ animal | animal }}</p>
+
+
+<h3>Note supplémentaire</h3>
+
+<p>Il est possible de donner un paramètre après le premier sans donner le premier.</p>
+
+<p>{{ 9 | currency:undefined:'code'}}</p>

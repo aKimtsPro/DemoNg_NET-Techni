@@ -13,6 +13,10 @@ const routes: Routes = [
     path: 'demo', 
     loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule)
   },
+  {
+    path: 'exo', 
+    loadChildren: () => import('./exo/exo.module').then(m => m.ExoModule)
+  },
   { path: 'module/import', component: DemoExportComponent },
   { path: '404', component: Page404Component },
   { path: '**', redirectTo: '404'}
