@@ -8,6 +8,7 @@ import { DirectiveComponent } from './components/directive/directive.component';
 import { ParamComponent } from './components/param/param.component';
 import { PipeComponent } from './components/pipe/pipe.component';
 import { AnimalPipe } from './pipes/animal.pipe';
+import { HighlightDirective } from './directives/highlight.directive';
 
 
 
@@ -18,7 +19,8 @@ import { AnimalPipe } from './pipes/animal.pipe';
     DirectiveComponent,
     ParamComponent,
     PipeComponent,
-    AnimalPipe
+    AnimalPipe,
+    HighlightDirective
   ],
   imports: [
     CommonModule,

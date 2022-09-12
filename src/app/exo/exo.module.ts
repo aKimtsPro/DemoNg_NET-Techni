@@ -6,6 +6,8 @@ import { ExoContainerComponent } from './components/exo-container/exo-container.
 import { ExoRoutingModule } from './exo-routing.module';
 import { TimePipe } from './pipes/time.pipe';
 import { ExoPipeComponent } from './components/exo-pipe/exo-pipe.component';
+import { ExoDirectiveComponent } from './components/exo-directive/exo-directive.component';
+import { AccueilComponent } from './components/accueil/accueil.component';
 
 
 
@@ -14,7 +16,9 @@ import { ExoPipeComponent } from './components/exo-pipe/exo-pipe.component';
     ExoBindingComponent,
     ExoContainerComponent,
     TimePipe,
-    ExoPipeComponent
+    ExoPipeComponent,
+    ExoDirectiveComponent,
+    AccueilComponent
   ],
   imports: [
     CommonModule,

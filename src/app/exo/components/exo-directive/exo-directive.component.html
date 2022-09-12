@@ -1,0 +1,30 @@
+<h2>Exo sur les directives</h2>
+
+<div class="row">
+    <div *ngFor="let produit of produits" class="col-sm-4">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+
+                <h5 class="card-title">{{ produit.modele }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ produit.marque }}</h6>
+
+                <ng-container *ngIf="produit.stock > 0; else indisponible">
+                    <ul>
+                        <li>prix: <span [ngClass]="{'low-price': produit.prix <= 20}">{{ produit.prix | currency:'EUR' }}</span></li>
+                        <li>stock: <span>{{ produit.stock }}</span></li>
+                    </ul>
+    
+                    <button class="btn btn-success" (click)="acheter(produit)">acheter</button>
+                </ng-container>
+
+                <ng-template #indisponible>
+                    <p class="card-text">Ce produit n'est pas disponible</p>
+                </ng-template>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
