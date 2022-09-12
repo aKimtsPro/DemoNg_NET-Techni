@@ -9,6 +9,8 @@ import { ParamComponent } from './components/param/param.component';
 import { PipeComponent } from './components/pipe/pipe.component';
 import { AnimalPipe } from './pipes/animal.pipe';
 import { HighlightDirective } from './directives/highlight.directive';
+import { CommuParentComponent } from './components/commu-parent/commu-parent.component';
+import { CommuEnfantComponent } from './components/commu-parent/commu-enfant/commu-enfant.component';
 
 
 
@@ -20,7 +22,9 @@ import { HighlightDirective } from './directives/highlight.directive';
     ParamComponent,
     PipeComponent,
     AnimalPipe,
-    HighlightDirective
+    HighlightDirective,
+    CommuParentComponent,
+    CommuEnfantComponent
   ],
   imports: [
     CommonModule,

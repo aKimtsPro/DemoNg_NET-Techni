@@ -1,0 +1,16 @@
+
+<div id="parent">
+
+    <h2>Communication parent enfant</h2>
+
+    <ul>
+        <li *ngFor="let chips of produits">
+            {{chips.modele}} - {{chips.prix | currency:'EUR'}}
+        </li>
+    </ul>
+
+    <div id="enfant">
+        <app-commu-enfant [total]="getTotal()" bidule="getTotal()" (inflation)="onInflation( $event )"></app-commu-enfant>
+    </div>
+</div>
+

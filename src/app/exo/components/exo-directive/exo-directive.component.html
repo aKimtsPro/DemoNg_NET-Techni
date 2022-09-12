@@ -1,6 +1,6 @@
 <h2>Exo sur les directives</h2>
 
-<div class="row">
+<div class="row" appCopy>
     <div *ngFor="let produit of produits" class="col-sm-4">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
@@ -25,6 +25,30 @@
         </div>
     </div>
 </div>
+
+<h3>Custom Directive</h3>
+
+<h4>Element simple</h4>
+<button appCopy>bouton à copier</button>
+
+
+<h4>Element composé</h4>
+
+<div class="row">
+    <div class="col-sm-4" appCopy>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+        
+                <h5 class="card-title">title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">sub</h6>
+        
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quia veritatis ratione a sequi facere, harum labore, nesciunt similique deleniti dolores adipisci, sint at pariatur reiciendis quae nisi quisquam et?</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 

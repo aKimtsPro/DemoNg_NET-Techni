@@ -8,6 +8,7 @@ import { TimePipe } from './pipes/time.pipe';
 import { ExoPipeComponent } from './components/exo-pipe/exo-pipe.component';
 import { ExoDirectiveComponent } from './components/exo-directive/exo-directive.component';
 import { AccueilComponent } from './components/accueil/accueil.component';
+import { CopyDirective } from './directives/copy.directive';
 
 
 
@@ -18,7 +19,8 @@ import { AccueilComponent } from './components/accueil/accueil.component';
     TimePipe,
     ExoPipeComponent,
     ExoDirectiveComponent,
-    AccueilComponent
+    AccueilComponent,
+    CopyDirective
   ],
   imports: [
     CommonModule,
