@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DemoBindingComponent } from './components/demo-binding/demo-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DemoContainerComponent } from './components/demo-container/demo-container.component';
 import { DemoRoutingModule } from './demo-routing.module';
 import { DirectiveComponent } from './components/directive/directive.component';
@@ -11,6 +11,7 @@ import { AnimalPipe } from './pipes/animal.pipe';
 import { HighlightDirective } from './directives/highlight.directive';
 import { CommuParentComponent } from './components/commu-parent/commu-parent.component';
 import { CommuEnfantComponent } from './components/commu-parent/commu-enfant/commu-enfant.component';
+import { FormsComponent } from './components/forms/forms.component';
 
 
 
@@ -24,12 +25,14 @@ import { CommuEnfantComponent } from './components/commu-parent/commu-enfant/com
     AnimalPipe,
     HighlightDirective,
     CommuParentComponent,
-    CommuEnfantComponent
+    CommuEnfantComponent,
+    FormsComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
-    DemoRoutingModule
+    DemoRoutingModule,
+    ReactiveFormsModule
   ],
   exports: [
     DemoBindingComponent

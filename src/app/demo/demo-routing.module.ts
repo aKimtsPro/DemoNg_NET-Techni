@@ -4,6 +4,7 @@ import { CommuParentComponent } from './components/commu-parent/commu-parent.com
 import { DemoBindingComponent } from './components/demo-binding/demo-binding.component';
 import { DemoContainerComponent } from './components/demo-container/demo-container.component';
 import { DirectiveComponent } from './components/directive/directive.component';
+import { FormsComponent } from './components/forms/forms.component';
 import { ParamComponent } from './components/param/param.component';
 import { PipeComponent } from './components/pipe/pipe.component';
 
@@ -14,6 +15,7 @@ const routes : Routes = [
         { path: 'directive', component: DirectiveComponent },
         { path: 'pipe', component: PipeComponent },
         { path: 'parent', component: CommuParentComponent },
+        { path: 'forms', component: FormsComponent },
     ] }
 ]
 

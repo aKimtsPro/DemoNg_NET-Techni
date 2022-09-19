@@ -9,6 +9,9 @@ import { ExoPipeComponent } from './components/exo-pipe/exo-pipe.component';
 import { ExoDirectiveComponent } from './components/exo-directive/exo-directive.component';
 import { AccueilComponent } from './components/accueil/accueil.component';
 import { CopyDirective } from './directives/copy.directive';
+import { ExoCommuComponent } from './components/exo-commu/exo-commu.component';
+import { ListeComponent } from './components/exo-commu/liste/liste.component';
+import { AjouterComponent } from './components/exo-commu/ajouter/ajouter.component';
 
 
 
@@ -20,7 +23,10 @@ import { CopyDirective } from './directives/copy.directive';
     ExoPipeComponent,
     ExoDirectiveComponent,
     AccueilComponent,
-    CopyDirective
+    CopyDirective,
+    ExoCommuComponent,
+    ListeComponent,
+    AjouterComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,34 @@
+<h2>Les formulaires</h2>
+
+
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label class="form-label">nom</label>
+        <input type="text" class="form-control" formControlName="nom">
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">editeur</label>
+        <input type="text" class="form-control" formControlName="editeur">
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">categorie</label>
+        <select class="form-select" formControlName="categorie">
+            <option value="deckbuilding">deckbuilding</option>
+            <option value="tuiles">tuiles</option>
+            <option value="cartes">cartes</option>
+            <option value="4X">4X</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">prix</label>
+        <input type="number" class="form-control" formControlName="prix">
+    </div>
+
+    <button class="btn btn-info" type="submit">créer</button>
+
+</form>
