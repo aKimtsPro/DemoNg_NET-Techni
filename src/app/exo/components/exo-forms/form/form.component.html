@@ -1,0 +1,39 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label class="form-label">nom</label>
+        <input type="text" class="form-control" formControlName="nom">
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">marque</label>
+        <input type="text" class="form-control" formControlName="marque">
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">prix</label>
+        <input type="number" class="form-control" formControlName="prix">
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">description</label>
+        <textarea class="form-control" formControlName="desc"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">categorie</label>
+        <select class="form-select" formControlName="categorie">
+            <option value="alimentaire">alimentaire</option>
+            <option value="meuble">meuble</option>
+            <option value="electronique">electronique</option>
+        </select>
+    </div>
+
+    <div class="form-group" *ngIf="form.value.categorie == 'alimentaire'">
+        <label class="form-label">peremption</label>
+        <input type="date" class="form-control" formControlName="peremption">
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="form.invalid">créer</button>
+
+</form>

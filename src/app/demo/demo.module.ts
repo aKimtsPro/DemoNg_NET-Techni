@@ -12,6 +12,7 @@ import { HighlightDirective } from './directives/highlight.directive';
 import { CommuParentComponent } from './components/commu-parent/commu-parent.component';
 import { CommuEnfantComponent } from './components/commu-parent/commu-enfant/commu-enfant.component';
 import { FormsComponent } from './components/forms/forms.component';
+import { FakeLoginComponent } from './components/fake-login/fake-login.component';
 
 
 
@@ -26,7 +27,8 @@ import { FormsComponent } from './components/forms/forms.component';
     HighlightDirective,
     CommuParentComponent,
     CommuEnfantComponent,
-    FormsComponent
+    FormsComponent,
+    FakeLoginComponent
   ],
   imports: [
     CommonModule,

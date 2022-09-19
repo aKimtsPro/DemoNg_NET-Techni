@@ -1,0 +1,18 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-4" *ngFor="let prod of produits">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title">{{prod.nom}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{prod.marque}} ({{prod.categorie}})</h6>
+                <p class="card-text">{{ prod.desc ? prod.desc :'?' }}</p>
+                <p class="card-text">{{ prod.prix | currency:'EUR' }}</p>
+                <p class="card-text" *ngIf="prod.categorie=='alimentaire'">{{ prod.peremption | date:'dd-MM-yyyy' }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

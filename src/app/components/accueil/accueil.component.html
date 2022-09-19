@@ -12,3 +12,7 @@
     <li>les différents bindings</li>
     <li>La navigation</li>
 </ul>
+
+<div *ngIf="isConnected">
+    <button class="btn btn-info" (click)="logout()">se déconnecter</button>
+</div>

@@ -6,6 +6,7 @@ import { ExoCommuComponent } from "./components/exo-commu/exo-commu.component";
 import { ExoContainerComponent } from "./components/exo-container/exo-container.component";
 import { ExoDirectiveComponent } from "./components/exo-directive/exo-directive.component";
 import { ExoPipeComponent } from "./components/exo-pipe/exo-pipe.component";
+import { ExoFormsComponent } from "./components/exo-forms/exo-forms.component";
 
 const routes: Routes = [{
     path: '',
@@ -15,7 +16,8 @@ const routes: Routes = [{
         { path: 'binding', component: ExoBindingComponent },
         { path: 'pipe', component: ExoPipeComponent },
         { path: 'directive', component: ExoDirectiveComponent },
-        { path: 'commu', component: ExoCommuComponent }
+        { path: 'commu', component: ExoCommuComponent },
+        { path: 'form', component: ExoFormsComponent },
     ]
 }]
 
