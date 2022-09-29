@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ApiGetComponent } from './components/api-get/api-get.component';
 import { CommuParentComponent } from './components/commu-parent/commu-parent.component';
 import { DemoBindingComponent } from './components/demo-binding/demo-binding.component';
 import { DemoContainerComponent } from './components/demo-container/demo-container.component';
@@ -20,6 +21,7 @@ const routes : Routes = [
         { path: 'forms', component: FormsComponent },
         { path: 'service', component: FakeLoginComponent },
         { path: 'observable', component: ObservablesComponent },
+        { path: 'get', component: ApiGetComponent },
     ] }
 ]
 

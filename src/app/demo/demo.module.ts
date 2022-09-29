@@ -15,6 +15,7 @@ import { FormsComponent } from './components/forms/forms.component';
 import { FakeLoginComponent } from './components/fake-login/fake-login.component';
 import { ObservablesComponent } from './components/observables/observables.component';
 import { ObsClickDirective } from './directives/obs-click.directive';
+import { ApiGetComponent } from './components/api-get/api-get.component';
 
 
 
@@ -32,7 +33,8 @@ import { ObsClickDirective } from './directives/obs-click.directive';
     FormsComponent,
     FakeLoginComponent,
     ObservablesComponent,
-    ObsClickDirective
+    ObsClickDirective,
+    ApiGetComponent
   ],
   imports: [
     CommonModule,

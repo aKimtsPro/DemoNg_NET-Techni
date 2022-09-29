@@ -1,0 +1,26 @@
+<h3>Les posts</h3>
+
+<div>
+    <h4>ajouter un post</h4>
+
+    <form [formGroup]="form" (ngSubmit)="createPost()">
+        <input placeholder="author" formControlName="author">
+        <input placeholder="title" formControlName="title">
+
+        <button type="submit">envoyer</button>
+    </form>
+
+</div>
+
+
+<div *ngIf="posts; else loading">
+    <div *ngFor="let post of posts">
+        <p><span>id:</span> {{ post.id }} </p>
+        <p><span>author:</span>{{ post.author }}</p>
+        <p><span>title:</span>{{ post.title }}</p>
+    </div>
+</div>
+
+<ng-template #loading>
+    <p>loading...</p>
+</ng-template>
