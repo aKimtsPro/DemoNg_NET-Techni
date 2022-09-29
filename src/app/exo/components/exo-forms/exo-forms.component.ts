@@ -12,7 +12,7 @@ export class ExoFormsComponent implements OnInit {
     {
       nom:"prod1",
       marque: "mamark",
-      prix: 15,
+      prix: 5,
       categorie: "meuble"
     }
   ];
