@@ -7,6 +7,7 @@ import { ExoContainerComponent } from "./components/exo-container/exo-container.
 import { ExoDirectiveComponent } from "./components/exo-directive/exo-directive.component";
 import { ExoPipeComponent } from "./components/exo-pipe/exo-pipe.component";
 import { ExoFormsComponent } from "./components/exo-forms/exo-forms.component";
+import { ExoServiceComponent } from "./components/exo-service/exo-service.component";
 
 const routes: Routes = [{
     path: '',
@@ -18,6 +19,7 @@ const routes: Routes = [{
         { path: 'directive', component: ExoDirectiveComponent },
         { path: 'commu', component: ExoCommuComponent },
         { path: 'form', component: ExoFormsComponent },
+        { path: 'service', component: ExoServiceComponent },
     ]
 }]
 

@@ -1,0 +1,28 @@
+<h2>Mon panier</h2>
+
+<ng-container *ngIf="produits.length > 0; else emptyCart">
+    <div class="accordion-item" *ngFor="let prod of produits">
+        <h3>
+          {{ prod.nom }} ({{prod.marque}}) - {{prod.prix | currency:'EUR'}}
+        </h3>
+        <p >
+            <span>catégorie:</span> {{ prod.categorie }}
+        </p>
+        <p *ngIf="prod.categorie == 'alimentaire'">
+            <span>date de péremption:</span> {{ prod.peremption }}
+        </p>
+        <p *ngIf="prod.desc">
+            {{ prod.desc }}
+        </p>
+        <div class="btn-rack">
+            <button class="btn btn-danger" (click)="removeFromCart(prod)">
+                supprimer
+            </button>
+        </div>
+    </div>
+</ng-container>
+
+
+<ng-template #emptyCart>
+    le panier est vide...
+</ng-template>

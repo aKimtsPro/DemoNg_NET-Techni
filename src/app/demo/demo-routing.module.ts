@@ -6,6 +6,7 @@ import { DemoContainerComponent } from './components/demo-container/demo-contain
 import { DirectiveComponent } from './components/directive/directive.component';
 import { FakeLoginComponent } from './components/fake-login/fake-login.component';
 import { FormsComponent } from './components/forms/forms.component';
+import { ObservablesComponent } from './components/observables/observables.component';
 import { ParamComponent } from './components/param/param.component';
 import { PipeComponent } from './components/pipe/pipe.component';
 
@@ -18,6 +19,7 @@ const routes : Routes = [
         { path: 'parent', component: CommuParentComponent },
         { path: 'forms', component: FormsComponent },
         { path: 'service', component: FakeLoginComponent },
+        { path: 'observable', component: ObservablesComponent },
     ] }
 ]
 

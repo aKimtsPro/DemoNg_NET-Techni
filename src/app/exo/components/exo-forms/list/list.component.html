@@ -9,6 +9,7 @@
                 <p class="card-text">{{ prod.desc ? prod.desc :'?' }}</p>
                 <p class="card-text">{{ prod.prix | currency:'EUR' }}</p>
                 <p class="card-text" *ngIf="prod.categorie=='alimentaire'">{{ prod.peremption | date:'dd-MM-yyyy' }}</p>
+                <button class="btn btn-success" (click)="addToCart(prod)">ajouter au panier</button>
                 </div>
             </div>
         </div>

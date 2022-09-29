@@ -15,6 +15,7 @@ import { AjouterComponent } from './components/exo-commu/ajouter/ajouter.compone
 import { ExoFormsComponent } from './components/exo-forms/exo-forms.component';
 import { FormComponent } from './components/exo-forms/form/form.component'; 
 import { ListComponent } from './components/exo-forms/list/list.component';
+import { ExoServiceComponent } from './components/exo-service/exo-service.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ListComponent } from './components/exo-forms/list/list.component';
     AjouterComponent,
     ExoFormsComponent,
     FormComponent,
-    ListComponent
+    ListComponent,
+    ExoServiceComponent
   ],
   imports: [
     CommonModule,

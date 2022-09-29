@@ -8,7 +8,14 @@ import { Produit } from './produit.model';
 })
 export class ExoFormsComponent implements OnInit {
 
-  produits: Produit[] = [];
+  produits: Produit[] = [
+    {
+      nom:"prod1",
+      marque: "mamark",
+      prix: 15,
+      categorie: "meuble"
+    }
+  ];
 
   constructor() { }
 

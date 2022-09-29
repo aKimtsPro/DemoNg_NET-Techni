@@ -30,4 +30,8 @@ export class FakeAuthService {
     return localStorage.getItem('user') != undefined;
   }
 
+
+  get userName(): string{
+    return "pol";
+  }
 }

@@ -13,6 +13,8 @@ import { CommuParentComponent } from './components/commu-parent/commu-parent.com
 import { CommuEnfantComponent } from './components/commu-parent/commu-enfant/commu-enfant.component';
 import { FormsComponent } from './components/forms/forms.component';
 import { FakeLoginComponent } from './components/fake-login/fake-login.component';
+import { ObservablesComponent } from './components/observables/observables.component';
+import { ObsClickDirective } from './directives/obs-click.directive';
 
 
 
@@ -28,7 +30,9 @@ import { FakeLoginComponent } from './components/fake-login/fake-login.component
     CommuParentComponent,
     CommuEnfantComponent,
     FormsComponent,
-    FakeLoginComponent
+    FakeLoginComponent,
+    ObservablesComponent,
+    ObsClickDirective
   ],
   imports: [
     CommonModule,
