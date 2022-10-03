@@ -12,7 +12,7 @@ export class ApiConsumeService {
   }
 
   getPosts(): Observable<Post[]>{
-    return this._client.get<Post[]>("http://localhost:3000/posts").pipe(
+    return this._client.get<Post[]>("http://localhost:3000/posts", ).pipe(
       tap((data) => console.log(data))
     )
   }
@@ -20,6 +20,7 @@ export class ApiConsumeService {
   createPost(post: Post): Observable<Post> {
     return this._client.post<Post>("http://localhost:3000/posts", post)
   }
+
 
 
 

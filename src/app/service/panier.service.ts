@@ -15,6 +15,7 @@ export class PanierService {
 
   addToCart(toAdd: Produit){
     this._produits.push( toAdd );
+    
     this._panierChanged$.next( this.produits );
     if( toAdd.prix < 10 ){
       this._cheapItemAdded$.next( toAdd );

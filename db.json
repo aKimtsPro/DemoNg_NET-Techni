@@ -1,14 +1,19 @@
 {
   "posts": [
     {
+      "author": "okok",
+      "title": "truc",
+      "id": 2
+    },
+    {
       "id": 1,
       "title": "json-server",
       "author": "typicode"
     },
     {
-      "author": "okok",
+      "author": "machin",
       "title": "truc",
-      "id": 2
+      "id": 3
     }
   ],
   "comments": [
